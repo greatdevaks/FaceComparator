@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <title>IdentiSpy</title>
+</head>
+<body>
+<div class="container">
+    <h2>Welcome to IdentiSpy</h2>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <hr>
+            <p>IdentiSpy is a Cloud based Criminal Identification System.</p>
+            <p>This system is build using Amazon AWS Cloud.</p>
+            <p>The dataset of criminal faces is fictitious as of now (for implementation and testing purpose).</p>
+            <p>Two of the images for testing purpose can be downloaded from the following links (though the dataset has many dummy images):
+                <ul>
+                    <li><a href="https://www.google.co.in/search?q=amitabh+bachan&safe=active&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj3xtjO_8DYAhULMY8KHckJCDwQ_AUIDCgD&biw=1536&bih=760">Amitabh Bachchan</a> </li>
+                    <li><a href="https://www.google.co.in/search?safe=active&biw=1536&bih=711&tbm=isch&sa=1&ei=xIZPWsbzLof-vASriLGYBQ&q=salman+khan&oq=salman+khan&gs_l=psy-ab.3..0i67k1l2j0j0i67k1j0j0i67k1l3j0j0i67k1.89126.90926.0.91170.11.6.0.4.4.0.250.607.0j2j1.3.0....0...1c.1.64.psy-ab..4.7.720....0.XWAXU1b9aQk">Salman Khan</a></li>
+                </ul>
+            </p>
+            <hr>
+            <form method=POST enctype=multipart/form-data action="{{ url_for('index') }}">
+
+                <p><label>Upload the image here</label></p>
+                <input type="file" name=photo>
+                <input type="submit">
+                <p><label>Note: Please try with images from above mentioned links and some random images as well.</label></p>
+
+            </form>
+            <hr>
+            <p>Developed by: Anmol Krishan Sachdeva, Student No.: 1758525, MSc Advanced Computing, UoB</p>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
+
